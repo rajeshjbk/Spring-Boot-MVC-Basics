@@ -1,0 +1,32 @@
+package com.raj.service;
+
+import java.time.LocalDate;
+
+import org.springframework.stereotype.Service;
+
+@Service("seasonService")
+public class SeasonFinderServiceImpl implements ISeasonFinderService {
+
+	@Override
+	public String showSeason() {
+		
+		//get System Date
+		LocalDate date = LocalDate.now();
+		
+		//get current month number
+		int month = date.getMonthValue();
+		
+		//find the season name
+		if(month >= 3 && month <= 6) {
+			
+			return "Summer Season";
+		
+		}else if(month >= 7 && month <= 10) {
+			
+			return "Rainy Season";
+		
+		}else {
+			return "Winter Season";
+		}
+	}
+}

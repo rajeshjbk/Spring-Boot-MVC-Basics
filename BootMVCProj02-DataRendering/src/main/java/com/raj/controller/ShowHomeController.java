@@ -7,6 +7,8 @@ import java.util.Set;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
+import com.raj.model.Student;
+
 @Controller
 public class ShowHomeController {
 
@@ -204,6 +206,16 @@ public class ShowHomeController {
 		map.put("phones",Set.of(5678909L,6787959L,4567869L));
 		map.put("idDetails",Map.of("aadhar",567868,"voterid",76567,"panno",456789));
 		
+		//passing Model class obj as the model attribute
+		Student st = new Student(1001,"Raja","Hyd");
+		map.put("stud", st);
+		
+		//passing List of Model class objs as the model attributes
+		Student st1 = new Student(1001,"Rajesh","Hyd");
+		Student st2 = new Student(1002,"Suresh","Vizag");
+		Student st3 = new Student(1003,"Rahul","Hyd");
+		List<Student> list = List.of(st1, st2, st3);
+		map.put("studList",list);
 		
 	//	return LVN
 		return "welcome";

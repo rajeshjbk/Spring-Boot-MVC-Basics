@@ -7,7 +7,7 @@
 	<table border="0" align="center" bgcolor="cyan">
 		<tr>
 			<td>sno::</td>
-			<td><input type='text' name="sno"></td>
+			<td><input type='text' name="sno" placeholder="Enter Your Name:"></td>
 		</tr>
 
 		<tr>

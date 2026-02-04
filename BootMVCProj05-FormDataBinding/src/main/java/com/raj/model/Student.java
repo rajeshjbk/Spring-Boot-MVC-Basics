@@ -7,7 +7,7 @@ public class Student {
 
 	private Integer sno;
 	private String sname;
-	private String sadd;
+	private String sadd="hyd";
 	private Double avg;
 	
 }

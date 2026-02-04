@@ -4,7 +4,7 @@
 	Page</h1>
 <form action="register" method="POST">
 
-	<table border="0" align="center">
+	<table border="0" align="center" bgcolor="cyan">
 		<tr>
 			<td>sno::</td>
 			<td><input type='text' name="sno"></td>

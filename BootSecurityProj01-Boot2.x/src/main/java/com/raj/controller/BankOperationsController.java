@@ -44,5 +44,4 @@ public class BankOperationsController {
 		//return LVN
 		return "access-denied";
 	}
-	
 }

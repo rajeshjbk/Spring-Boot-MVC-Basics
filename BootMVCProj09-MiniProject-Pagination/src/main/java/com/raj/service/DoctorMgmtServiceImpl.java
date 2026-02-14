@@ -1,6 +1,7 @@
 package com.raj.service;
 
 import java.util.ArrayList;
+
 import java.util.List;
 
 import org.springframework.beans.BeanUtils;
@@ -95,8 +96,6 @@ public class DoctorMgmtServiceImpl implements IDoctorMgmtService{
 
 		return id+" Doctor not Found and not Deleted";
 	}
-
-
 
 	@Override
 	public Page<DoctorVO> showDoctorsByPagination(Pageable pageable) {

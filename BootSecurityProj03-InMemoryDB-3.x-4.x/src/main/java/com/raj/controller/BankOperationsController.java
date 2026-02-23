@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/bank")   // global path
 public class BankOperationsController {
 
-	@GetMapping("/welcome")
+	@GetMapping("/welcome") 
 	public ResponseEntity<String> showHome() {
 		return new ResponseEntity<String>(
 				"welcome to home Page ::",
